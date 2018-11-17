@@ -34,7 +34,7 @@
 
 
 ## Demo Source Code
-**Java3D Examples 1.5.2:** http://download.java.net/media/java3d/examples/1.5.2/j3d-examples-1_5_2-src.zip
+**Java3D Examples 1.5.2:** https://github.com/Java-3D/Java3D/tree/master/Java3D%20Demo%20Source%20Code
 
 
 ## PDFs
