@@ -35,6 +35,7 @@
 
 ## Demo Source Code
 **Java3D Examples 1.5.2:** https://github.com/Java-3D/Java3D/tree/master/Java3D%20Demo%20Source%20Code
+**Java3D Examples (Java2s):** http://www.java2s.com/Code/Java/3D/Catalog3D.htm
 
 
 ## PDFs
