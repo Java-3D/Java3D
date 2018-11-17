@@ -1,0 +1,167 @@
+/*
+ * $RCSfile: simple_vp.cg,v $
+ *
+ * Copyright (c) 2007 Sun Microsystems, Inc. All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ *
+ * - Redistribution of source code must retain the above copyright
+ *   notice, this list of conditions and the following disclaimer.
+ *
+ * - Redistribution in binary form must reproduce the above copyright
+ *   notice, this list of conditions and the following disclaimer in
+ *   the documentation and/or other materials provided with the
+ *   distribution.
+ *
+ * Neither the name of Sun Microsystems, Inc. or the names of
+ * contributors may be used to endorse or promote products derived
+ * from this software without specific prior written permission.
+ *
+ * This software is provided "AS IS," without a warranty of any
+ * kind. ALL EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND
+ * WARRANTIES, INCLUDING ANY IMPLIED WARRANTY OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT, ARE HEREBY
+ * EXCLUDED. SUN MICROSYSTEMS, INC. ("SUN") AND ITS LICENSORS SHALL
+ * NOT BE LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF
+ * USING, MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS
+ * DERIVATIVES. IN NO EVENT WILL SUN OR ITS LICENSORS BE LIABLE FOR
+ * ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT, INDIRECT, SPECIAL,
+ * CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER CAUSED AND
+ * REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF OR
+ * INABILITY TO USE THIS SOFTWARE, EVEN IF SUN HAS BEEN ADVISED OF THE
+ * POSSIBILITY OF SUCH DAMAGES.
+ *
+ * You acknowledge that this software is not designed, licensed or
+ * intended for use in the design, construction, operation or
+ * maintenance of any nuclear facility.
+ *
+ * $Revision: 1.2 $
+ * $Date: 2007/02/09 17:21:33 $
+ * $State: Exp $
+ */
+
+/*********************************************************************NVMH3****
+Path:  NVSDK\Common\media\programs
+File:  simple.cg
+
+Copyright NVIDIA Corporation 2002
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THIS SOFTWARE IS PROVIDED
+*AS IS* AND NVIDIA AND ITS SUPPLIERS DISCLAIM ALL WARRANTIES, EITHER EXPRESS
+OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO EVENT SHALL NVIDIA OR ITS SUPPLIERS
+BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES
+WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS,
+BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR ANY OTHER PECUNIARY LOSS)
+ARISING OUT OF THE USE OF OR INABILITY TO USE THIS SOFTWARE, EVEN IF NVIDIA HAS
+BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+
+Comments:
+
+******************************************************************************/
+
+// Simple vertex shader, derived from NVIDIA's simple.cg sample
+// shader, that modulates the lit color with a noise pattern based on
+// vertex position.
+
+// define inputs from application
+struct appin
+{
+    float4 Position     : POSITION;
+    float4 Normal       : NORMAL;
+};
+
+// define outputs from vertex shader
+struct vertout
+{
+    float4 HPosition  : POSITION;
+    float4 FragPos    : TEXCOORD0;
+    float4 Color0     : COLOR0;
+};
+
+vertout main(appin IN,
+             uniform float4x4 ModelViewProj,
+             uniform float4x4 ModelViewIT,
+             uniform float4 LightVec,
+             uniform float4 LightColor,
+             uniform float4 DiffuseMaterial,
+             uniform float4 SpecularMaterial)
+{
+    vertout OUT;
+
+// Assume that the profile is PROFILE_ARBVP1...
+// #ifdef PROFILE_ARBVP1
+    ModelViewProj = glstate.matrix.mvp;
+    ModelViewIT = glstate.matrix.invtrans.modelview[0];
+    LightVec = glstate.light[0].position;
+    LightColor = glstate.light[0].diffuse;
+    DiffuseMaterial = glstate.material.front.diffuse;
+    SpecularMaterial = glstate.material.front.specular;
+// #endif
+
+    // transform vertex position into homogenous clip-space
+    OUT.HPosition = mul(ModelViewProj, IN.Position);
+
+    // Output the post-perspective-divide position as FragPos
+    float invW = 1.0f / OUT.HPosition.w;
+    OUT.FragPos = OUT.HPosition * invW;
+
+    // transform normal from model-space to view-space
+    float3 normalVec = normalize(mul(ModelViewIT, IN.Normal).xyz);
+
+    // store normalized light vector
+    float3 lightVec = normalize(LightVec.xyz);
+
+    // calculate half angle vector
+    float3 eyeVec = float3(0.0, 0.0, 1.0);
+    float3 halfVec = normalize(lightVec + eyeVec);
+
+    // calculate diffuse component
+    float diffuse = dot(normalVec, lightVec);
+
+    // calculate specular component
+    float specular = dot(normalVec, halfVec);
+
+    // The lit() function is a handy function in the standard library that
+    // can be used to accelerate your lighting calculations.
+    //
+    // This function return a vector containing these values:
+    //     result.x = 1.0;
+    //     result.y = max(diffuse, 0);
+    //     result.z = if (result.y > 0.0) then pow(specular, 32) else 0.0
+    //     result.w = 1.0;
+
+    // Use the lit function to compute lighting vector from diffuse and
+    // specular values
+    float4 lighting = lit(diffuse, specular, 32);
+
+    // combine diffuse and specular contributions
+    float3 color0 = (lighting.y * DiffuseMaterial.xyz * LightColor.xyz) +
+	(lighting.z * SpecularMaterial.xyz);
+
+    // Generate a pseudo-random noise pattern
+//    float3 xyz = clamp((normalVec.xyz + 1.0) * 0.5, 0.0, 1.0);
+    float3 xyz = clamp((OUT.HPosition.xyz + 1.0) * 0.5, 0.0, 1.0);
+
+    xyz = frac(xyz * 262144.0);
+    float randSeed = frac(3.0 * xyz.x + 5.0 * xyz.y + 7.0 * xyz.z);
+
+    float3 altColor;
+
+    randSeed = frac(37.0 * randSeed);
+    altColor.x = randSeed * 0.5 + 0.5;
+    randSeed = frac(37.0 * randSeed);
+    altColor.y = randSeed * 0.5 + 0.5;
+    randSeed = frac(37.0 * randSeed);
+    altColor.z = randSeed * 0.5 + 0.5;
+    randSeed = frac(37.0 * randSeed);
+    float altAlpha = randSeed * 0.5;
+
+    // Apply noise and output final vertex color
+    OUT.Color0.rgb = lerp(color0, altColor, altAlpha);
+    OUT.Color0.a = 1.0;
+
+    return OUT;
+}

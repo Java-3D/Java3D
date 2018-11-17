@@ -1,0 +1,98 @@
+/*
+ * $RCSfile: instructions.txt,v $
+ *
+ * Copyright (c) 2007 Sun Microsystems, Inc. All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ *
+ * - Redistribution of source code must retain the above copyright
+ *   notice, this list of conditions and the following disclaimer.
+ *
+ * - Redistribution in binary form must reproduce the above copyright
+ *   notice, this list of conditions and the following disclaimer in
+ *   the documentation and/or other materials provided with the
+ *   distribution.
+ *
+ * Neither the name of Sun Microsystems, Inc. or the names of
+ * contributors may be used to endorse or promote products derived
+ * from this software without specific prior written permission.
+ *
+ * This software is provided "AS IS," without a warranty of any
+ * kind. ALL EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND
+ * WARRANTIES, INCLUDING ANY IMPLIED WARRANTY OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT, ARE HEREBY
+ * EXCLUDED. SUN MICROSYSTEMS, INC. ("SUN") AND ITS LICENSORS SHALL
+ * NOT BE LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF
+ * USING, MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS
+ * DERIVATIVES. IN NO EVENT WILL SUN OR ITS LICENSORS BE LIABLE FOR
+ * ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT, INDIRECT, SPECIAL,
+ * CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER CAUSED AND
+ * REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF OR
+ * INABILITY TO USE THIS SOFTWARE, EVEN IF SUN HAS BEEN ADVISED OF THE
+ * POSSIBILITY OF SUCH DAMAGES.
+ *
+ * You acknowledge that this software is not designed, licensed or
+ * intended for use in the design, construction, operation or
+ * maintenance of any nuclear facility.
+ *
+ * $Revision: 1.2 $
+ * $Date: 2007/02/09 17:21:38 $
+ * $State: Exp $
+ */
+
+					Four By Four
+
+Description:
+
+	 A three dimensional game of tic-tac-toe on a 4x4x4 cube.
+
+Object:
+
+	 Be the first to score four in a row.
+
+Instructions:
+
+	 1.  It's you versus the computer.
+
+	 2.  There are five skill levels. Press the "Skill Level" button to select your level
+	      of play. The program defaults to the hardest level. Changing the skill level in
+	      the middle of a game will force the start of a new game.
+
+	 3.  The screen on the left is a 3D window. A mouse drag in this window will rotate the 
+	      view to any desired position.
+
+	 4.  The screen on the right is a 2D window which displays all 18 faces that exist in the 
+	      4x4x4 array.
+
+	 5.  Click on any of the small gray spheres (in either the 2D or 3D window) to select a position. 
+
+	 6.  Positions owned by you will be marked in red. Positions owned by the computer will be 
+	      marked in blue.
+
+	 7.  Click the "Undo Move" button to take back a move.
+
+	 8.  Clicking on any of words "Face X" in the 2D window will cause that particular face to highlight
+	      in the 3D window. Clicking the word again will un-highlight the face.
+
+	 9.  The final score is based on skill level, number of moves, and time. Select the button
+	      "High Scores" to see a list of the top 20 scores. There is no penalty for using the
+	      undo button.
+
+	10. Good luck.
+
+General Strategy:
+
+	 1.  There are a 64 positions from which to choose. In total, there are 72 possible winning 
+	      combinations. 
+
+	 2.  The outer four corners and the inner "core" of eight have the most winning combinations,
+	      7 each, and should perhaps be chosen first.
+
+	 3.  Use the 2D window to keep an eye on all the faces.
+
+	 4.  The computer plays well at the highest skill level (the default). There are, however,
+	      faults in it's logic that can be exploited. Thus the human player can win even at the
+	      highest skill level. In the beginning, however, you may want to start at the lower skill
+	      levels and work your way up. 

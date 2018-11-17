@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Implementation-Title: Java 3D Example Programs
+Implementation-Version: 1.5.2
+Implementation-Vendor: Sun Microsystems, Inc.
+Main-Class: org.jdesktop.j3d.examples.hello_universe.HelloUniverse

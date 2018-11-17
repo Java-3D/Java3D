@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Simple 3D Applet</title>
+</head>
+<body>
+<applet code="org.jdesktop.applet.util.JNLPAppletLauncher"
+        width=500 height=400
+        archive="../../../../../../../dist/j3d-examples.jar,
+                 http://download.java.net/media/applet-launcher/applet-launcher.jar,
+                 http://download.java.net/media/java3d/webstart/release/j3d/latest/j3dcore.jar,
+                 http://download.java.net/media/java3d/webstart/release/j3d/latest/j3dutils.jar,
+                 http://download.java.net/media/java3d/webstart/release/vecmath/latest/vecmath.jar,
+                 http://download.java.net/media/jogl/builds/archive/jsr-231-webstart-current/jogl.jar,
+                 http://download.java.net/media/gluegen/webstart/gluegen-rt.jar">
+    <param name="codebase_lookup" value="false">
+    <param name="subapplet.classname" value="org.jdesktop.j3d.examples.applet3d.Applet3D$MyApplet">
+    <param name="subapplet.displayname" value="Java 3D Simple Applet">
+    <param name="jnlpNumExtensions" value="1">
+    <param name="jnlpExtension1" value="http://download.java.net/media/java3d/webstart/release/java3d-latest.jnlp">
+    <param name="progressbar" value="true">
+    <param name="noddraw.check" value="true">
+</applet>
+<p>Simple Java 3D Applet</p>
+</body>
+</html>

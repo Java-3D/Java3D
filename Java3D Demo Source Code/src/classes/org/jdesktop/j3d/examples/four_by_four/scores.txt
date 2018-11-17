@@ -1,0 +1,20 @@
+1	Bart Simpson   5283
+2	Dwight Eisenhower    5105
+3	Ken              5061
+4	Barbie    2883
+5	DoubleMint Twins    2195
+6	Robin Hood    1772
+7	Jack Benny    1604
+8	Anonymous    1550
+9	Duke 1501
+10	Jack Paar    1499
+11	Barney 1488
+12	Mick Jagger    1472
+13	Howard Hughes    1329
+14	Bugs Bunny    1328
+15	Suzi Chapstick    1302
+16	Forest Gump    1244
+17	Alfred Hitchcock    1231
+18	Roman Polaski    1168
+19	Missy Giovi    1106
+20	Bill Joy    1002

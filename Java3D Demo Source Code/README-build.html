@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<!--
+/*
+ * $RCSfile: README-build.html,v $
+ *
+ * Copyright (c) 2007 Sun Microsystems, Inc. All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ *
+ * - Redistribution of source code must retain the above copyright
+ *   notice, this list of conditions and the following disclaimer.
+ *
+ * - Redistribution in binary form must reproduce the above copyright
+ *   notice, this list of conditions and the following disclaimer in
+ *   the documentation and/or other materials provided with the
+ *   distribution.
+ *
+ * Neither the name of Sun Microsystems, Inc. or the names of
+ * contributors may be used to endorse or promote products derived
+ * from this software without specific prior written permission.
+ *
+ * This software is provided "AS IS," without a warranty of any
+ * kind. ALL EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND
+ * WARRANTIES, INCLUDING ANY IMPLIED WARRANTY OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT, ARE HEREBY
+ * EXCLUDED. SUN MICROSYSTEMS, INC. ("SUN") AND ITS LICENSORS SHALL
+ * NOT BE LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF
+ * USING, MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS
+ * DERIVATIVES. IN NO EVENT WILL SUN OR ITS LICENSORS BE LIABLE FOR
+ * ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT, INDIRECT, SPECIAL,
+ * CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER CAUSED AND
+ * REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF OR
+ * INABILITY TO USE THIS SOFTWARE, EVEN IF SUN HAS BEEN ADVISED OF THE
+ * POSSIBILITY OF SUCH DAMAGES.
+ *
+ * You acknowledge that this software is not designed, licensed or
+ * intended for use in the design, construction, operation or
+ * maintenance of any nuclear facility.
+ *
+ * $Revision: 1.10 $
+ * $Date: 2008/02/20 23:28:15 $
+ * $State: Exp $
+ */
+ -->
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>README-build: build instructions for the j3d-examples project</title>
+</head>
+<body>
+<h3><span style="text-decoration: underline;">Building
+the 3D Example Programs</span></h3>
+<p>To
+build the 3D example programs, you must first checkout the <a
+ href="http://j3d-examples.dev.java.net/">j3d-examples</a>
+CVS
+repository on java.net. For example, run
+the cvs checkout command as follows:<br>
+</p>
+<ul>
+  <code>cd &lt;cvs-root-dir&gt;</code><br>
+  <code>cvs checkout j3d-examples</code>
+</ul>
+<p>
+</p>
+<h3><span style="text-decoration: underline;">System Requirements</span>
+</h3>
+<p>Any operating environment that supports the Java Platform and the
+Java&nbsp;3D<sup><font size="-2">TM</font></sup> API should
+work. We have built j3d-examples on the following operating environments:<br>
+</p>
+<ul>
+  <li>Solaris: Sparc (Ultra60 or better) running Solaris 9</li>
+  <li>Linux: i386/i586 running SuSE 9 or RedHat 9.0</li>
+  <li>Windows: Windows/XP (Windows
+2000 should work, but is untested)<br>
+  </li>
+</ul>
+<p>The following software must be installed:</p>
+<ul>
+  <li><a href="http://java.sun.com/j2se">JDK 1.5.0</a> </li>
+  <li><a href="http://jakarta.apache.org/ant">Apache Ant 1.6.1</a> </li>
+  <li><a href="https://java3d.dev.java.net/">Java&nbsp;3D
+1.5.0</a> or later. </li>
+</ul>
+<h3><span style="text-decoration: underline;">Building
+j3d-examples</span><span
+ style="font-weight: bold; text-decoration: underline;"></span><br>
+</h3>
+<p>Before you start building, please check that your PATH must
+include the
+following directories:</p>
+<ul>
+  <li>&lt;ant-root-dir&gt;/bin</li>
+  <li>&lt;jdk-root_dir&gt;/bin</li>
+</ul>
+<p>NOTE that Java&nbsp;3D must be installed into the JDK that you have
+in
+your path <span style="font-weight: bold;">OR</span> you must put the
+Java&nbsp;3D and vecmath jar files (j3dcore.jar, j3dutils.jar and
+vecmath.jar) in your CLASSPATH and the directory containing the
+Java&nbsp;3D libraries in your LD_LIBRARY_PATH (Solaris or Linus) or
+PATH (Windows).<br>
+</p>
+<p>To build all examples:</p>
+<ul>
+  <code>cd &lt;cvs-root-dir&gt;/j3d-examples</code><br>
+  <code>ant</code>
+</ul>
+<p>
+</p>
+<p>This will build all example programs and bundle them into a single
+jar
+file,<code> j3d-examples.jar</code>, placed in the <code>dist</code>
+directory. <br>
+</p>
+<h3><span style="text-decoration: underline;">Running j3d-examples</span></h3>
+<p>To run an example program, you must ensure that your CLASSPATH
+contains <code>dist/j3d-examples.jar </code>in its list. For example,
+to run the
+HelloUniverse program:<br>
+</p>
+<ul>
+  <code>cd &lt;cvs-root-dir&gt;/j3d-examples<br>
+  </code> <code>java
+org.jdesktop.j3d.examples.hello_universe.HelloUniverse<br>
+  </code>
+</ul>
+<p>
+</p>
+<p>You may also point your Java-enabled web browser at some Java 3D
+applet
+examples, such as the <code>src/classes/org/jdesktop/j3d/examples/FourByFour.html</code>
+page, and run the Java&nbsp;3D applet example programs
+from within your browser. Java&nbsp;3D must be installed into the JDK
+in order to run Java&nbsp;3D programs from within a browser.<br>
+<br>
+</p>
+</body>
+</html>
