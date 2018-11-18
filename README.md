@@ -37,6 +37,12 @@
 
 **Java3D Programming A Technical Overview:** http://www.sc.ehu.es/ccwgamoa/docencia/Material/Java3D/j3d_clas.pdf
 
+**Introduction to Java3D (1):** https://web.ti.bfh.ch/fileadmin/home/frc1/Java3D-1.pdf
+
+**Introduction to Java3D (2):** https://web.ti.bfh.ch/fileadmin/home/frc1/Java3D-2.pdf
+
+**J3D Overview:** https://webdocs.cs.ualberta.ca/~anup/Courses/604/NOTES/J3D_overview.pdf
+
 
 ## Demo Source Code
 **Java3D Examples 1.5.2:** https://github.com/Java-3D/Java3D/tree/master/Java3D%20Demo%20Source%20Code
@@ -50,6 +56,10 @@
 **Java3D Overview:** http://www.computing.northampton.ac.uk/~gary/csy3019/docs/WalshGeringerCh1Intro.pdf
 
 **Introducing Java3D:** https://fivedots.coe.psu.ac.th/~ad/jg2/ch01/ch01.pdf
+
+**Evaluation of 3D Scene Graph APIs for Java (Master Thesis):** https://brage.bibsys.no/xmlui/bitstream/handle/11250/148046/Winger1.pdf?sequence=1
+
+**Games Programming with Java and Java3D:** http://fivedots.coe.psu.ac.th/~ad/jg/intro/gamesJava.pdf
 
 ## Books
 Java3D Programming by Daniel Selman
