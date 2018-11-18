@@ -49,6 +49,8 @@
 
 **Java3D Overview:** http://www.computing.northampton.ac.uk/~gary/csy3019/docs/WalshGeringerCh1Intro.pdf
 
+**Introducing Java3D:** https://fivedots.coe.psu.ac.th/~ad/jg2/ch01/ch01.pdf
+
 ## Books
 Java3D Programming by Daniel Selman
 
