@@ -51,6 +51,8 @@
 
 
 ## PDFs
+**Java3D API Specification:** https://www.oracle.com/technetwork/java/javase/tech/j3dguide-1-149772.pdf
+
 **Getting Started with Java3D API:** https://github.com/Java-3D/Java3D/tree/master/Getting%20Started
 
 **Java3D Overview:** http://www.computing.northampton.ac.uk/~gary/csy3019/docs/WalshGeringerCh1Intro.pdf
