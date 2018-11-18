@@ -14,9 +14,14 @@
 
 **Java3D.org:** http://www.java3d.org/index.html
 
+**J3D.org:** http://www.j3d.org/sites.html
 
 ## Tutorials
 **3D Graphics Programming in Java3D (JavaWorld):** https://www.javaworld.com/article/2076832/java-se/3d-graphics-programming-in-java--part-1--java-3d.html
+
+**Introduction to Java3D:** http://www.computing.northampton.ac.uk/~gary/csy3019/CSY3019SectionD.html#20_3D_Graphics:_Introduction
+
+**Building a Particle System for Java3D:** http://java.sys-con.com/node/99792?page=0,0
 
 
 ## Videos
@@ -41,6 +46,8 @@
 
 ## PDFs
 **Getting Started with Java3D API:** https://github.com/Java-3D/Java3D/tree/master/Getting%20Started
+
+**Java3D Overview:** http://www.computing.northampton.ac.uk/~gary/csy3019/docs/WalshGeringerCh1Intro.pdf
 
 ## Books
 Java3D Programming by Daniel Selman
