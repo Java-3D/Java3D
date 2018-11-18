@@ -62,8 +62,10 @@
 **Games Programming with Java and Java3D:** http://fivedots.coe.psu.ac.th/~ad/jg/intro/gamesJava.pdf
 
 ## Books
-Java3D Programming by Daniel Selman
+**Java3D Programming by Daniel Selman:** https://www.amazon.co.uk/dp/1930110359/
 
-Killer Game Programming by Andrew Davison
+**Killer Game Programming by Andrew Davison:** https://www.amazon.co.uk/dp/0596007302/ | http://fivedots.coe.psu.ac.th/~ad/jg/
 
-3D User Interfaces with Java3D by Jon Barrilleaux
+**3D User Interfaces with Java3D by Jon Barrilleaux:** https://www.amazon.co.uk/dp/1884777902/
+
+**Java3D API Jump-Start by Aaron E. Walsh & Doug Gehringer:** https://www.amazon.co.uk/dp/0130340766/
