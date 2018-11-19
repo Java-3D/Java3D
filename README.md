@@ -17,15 +17,9 @@
 **J3D.org:** http://www.j3d.org/sites.html
 
 ## Tutorials
-**3D Graphics Programming in Java3D, Part 1:** https://www.javaworld.com/article/2076832/java-se/3d-graphics-programming-in-java--part-1--java-3d.html
+**3D Graphics Programming in Java3D:** https://www.javaworld.com/article/2076832/java-se/3d-graphics-programming-in-java--part-1--java-3d.html | https://www.javaworld.com/article/2076329/java-se/3d-graphics-programming-in-java--part-2--advanced-java-3d.html | https://www.javaworld.com/article/2076410/java-se/3d-graphics-programming-in-java--part-3--opengl.html
 
-**3D Graphics Programming in Java3D, Part 2:** https://www.javaworld.com/article/2076329/java-se/3d-graphics-programming-in-java--part-2--advanced-java-3d.html
-
-**3D Graphics Programming in Java3D, Part 3:** https://www.javaworld.com/article/2076410/java-se/3d-graphics-programming-in-java--part-3--opengl.html
-
-**3D Graphics Programming in Java, Part I:** https://www.gamasutra.com/view/feature/3311/3d_graphics_programming_in_java_.php
-
-**3D Graphics Programming in Java, Part II:** https://www.gamasutra.com/view/feature/3312/3d_graphics_programming_in_java_.php
+**3D Graphics Programming in Java:** https://www.gamasutra.com/view/feature/3311/3d_graphics_programming_in_java_.php | https://www.gamasutra.com/view/feature/3312/3d_graphics_programming_in_java_.php
 
 **How to Install Java 3D:** http://www.ntu.edu.sg/home/ehchua/programming/opengl/Java3D.html
 
@@ -35,9 +29,7 @@
 
 
 ## Videos
-**Java3D Tutorial Part 1 by Ryan Bishop:** https://www.youtube.com/watch?v=yUnVPxCCRyA
-
-**Java3D Tutorial Part 2 by Ryan Bishop:** https://www.youtube.com/watch?v=UKve7NjU6a4
+**Java3D Tutorial Part 1 by Ryan Bishop:** https://www.youtube.com/watch?v=yUnVPxCCRyA | https://www.youtube.com/watch?v=UKve7NjU6a4
 
 
 ## Presentations
@@ -47,9 +39,7 @@
 
 **Java3D Programming A Technical Overview:** http://www.sc.ehu.es/ccwgamoa/docencia/Material/Java3D/j3d_clas.pdf
 
-**Introduction to Java3D (1):** https://web.ti.bfh.ch/fileadmin/home/frc1/Java3D-1.pdf
-
-**Introduction to Java3D (2):** https://web.ti.bfh.ch/fileadmin/home/frc1/Java3D-2.pdf
+**Introduction to Java3D (1):** https://web.ti.bfh.ch/fileadmin/home/frc1/Java3D-1.pdf | https://web.ti.bfh.ch/fileadmin/home/frc1/Java3D-2.pdf
 
 **J3D Overview:** https://webdocs.cs.ualberta.ca/~anup/Courses/604/NOTES/J3D_overview.pdf
 
