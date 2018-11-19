@@ -17,7 +17,17 @@
 **J3D.org:** http://www.j3d.org/sites.html
 
 ## Tutorials
-**3D Graphics Programming in Java3D (JavaWorld):** https://www.javaworld.com/article/2076832/java-se/3d-graphics-programming-in-java--part-1--java-3d.html
+**3D Graphics Programming in Java3D, Part 1 (JavaWorld):** https://www.javaworld.com/article/2076832/java-se/3d-graphics-programming-in-java--part-1--java-3d.html
+
+**3D Graphics Programming in Java3D, Part 2 (JavaWorld):** https://www.javaworld.com/article/2076329/java-se/3d-graphics-programming-in-java--part-2--advanced-java-3d.html
+
+**3D Graphics Programming in Java3D, Part 3 (JavaWorld):** https://www.javaworld.com/article/2076410/java-se/3d-graphics-programming-in-java--part-3--opengl.html
+
+**3D Graphics Programming in Java, Part I:** https://www.gamasutra.com/view/feature/3311/3d_graphics_programming_in_java_.php
+
+**3D Graphics Programming in Java, Part II:** https://www.gamasutra.com/view/feature/3312/3d_graphics_programming_in_java_.php
+
+**How to Install Java 3D:** http://www.ntu.edu.sg/home/ehchua/programming/opengl/Java3D.html
 
 **Introduction to Java3D:** http://www.computing.northampton.ac.uk/~gary/csy3019/CSY3019SectionD.html#20_3D_Graphics:_Introduction
 
@@ -57,6 +67,8 @@
 
 **Java3D Overview:** http://www.computing.northampton.ac.uk/~gary/csy3019/docs/WalshGeringerCh1Intro.pdf
 
+**Performance Guide for Java3D:** https://github.com/Java-3D/Java3D/blob/master/Extra/Performance%20Guide%20for%20Java3D.pdf
+
 **Introducing Java3D:** https://fivedots.coe.psu.ac.th/~ad/jg2/ch01/ch01.pdf
 
 **Evaluation of 3D Scene Graph APIs for Java (Master Thesis):** https://brage.bibsys.no/xmlui/bitstream/handle/11250/148046/Winger1.pdf?sequence=1
@@ -64,7 +76,7 @@
 **Games Programming with Java and Java3D:** http://fivedots.coe.psu.ac.th/~ad/jg/intro/gamesJava.pdf
 
 ## Books
-**Java3D Programming by Daniel Selman:** https://www.amazon.co.uk/dp/1930110359/
+**Java3D Programming by Daniel Selman:** https://www.amazon.co.uk/dp/1930110359/ | https://www.mat.uniroma2.it/~picard/SMC/didattica/materiali_did/Java/Java_3D/Java_3D_Programming.pdf
 
 **Killer Game Programming by Andrew Davison:** https://www.amazon.co.uk/dp/0596007302/ | http://fivedots.coe.psu.ac.th/~ad/jg/
 
