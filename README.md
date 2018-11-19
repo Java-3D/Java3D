@@ -4,12 +4,10 @@
 * https://www.oracle.com/technetwork/java/javase/tech/index-jsp-138252.html
 
 &nbsp;
-
 ## Installation
 **Unzipping the Java3D 1.5.2 Release** 
 * http://www.java3d.org/suninstructions.html
 
-&nbsp;
 **Eclipse/Netbeans Installation** 
 * https://justjava3d.wordpress.com/2017/01/30/java3d-api-installation/
 
@@ -26,7 +24,7 @@
 **J3D.org** 
 * http://www.j3d.org/sites.html
 
-
+&nbsp;
 ## Tutorials
 **3D Graphics Programming in Java3D** 
 * https://www.javaworld.com/article/2076832/java-se/3d-graphics-programming-in-java--part-1--java-3d.html 
@@ -50,13 +48,13 @@
 **Building a Particle System for Java3D** 
 * http://java.sys-con.com/node/99792?page=0,0
 
-
+&nbsp;
 ## Videos
 **Java3D Tutorial by Ryan Bishop** 
 * https://www.youtube.com/watch?v=yUnVPxCCRyA 
 * https://www.youtube.com/watch?v=UKve7NjU6a4
 
-
+&nbsp;
 ## Presentations
 **Java3D - Building Shape** 
 * https://webdocs.cs.ualberta.ca/~anup/Courses/604/NOTES/J3Dshape.pdf
@@ -78,7 +76,7 @@
 **J3D Overview** 
 * https://webdocs.cs.ualberta.ca/~anup/Courses/604/NOTES/J3D_overview.pdf
 
-
+&nbsp;
 ## Demo Source Code
 **Java3D Examples 1.5.2** 
 * https://github.com/Java-3D/Java3D/tree/master/Java3D%20Demo%20Source%20Code
@@ -87,7 +85,7 @@
 **Java3D Examples (Java2s)** 
 * http://www.java2s.com/Code/Java/3D/Catalog3D.htm
 
-
+&nbsp;
 ## PDFs
 **Java3D API Specification** 
 * https://www.oracle.com/technetwork/java/javase/tech/j3dguide-1-149772.pdf
@@ -116,7 +114,7 @@
 **Games Programming with Java and Java3D** 
 * http://fivedots.coe.psu.ac.th/~ad/jg/intro/gamesJava.pdf
 
-
+&nbsp;
 ## Books
 **Java3D Programming by Daniel Selman** 
 * https://www.amazon.co.uk/dp/1930110359/
