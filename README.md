@@ -2,16 +2,16 @@
 ## Downloads
 **Java3D** 
 * https://www.oracle.com/technetwork/java/javase/tech/index-jsp-138252.html
-
+&nbsp;
 
 ## Installation
 **Unzipping the Java3D 1.5.2 Release** 
 * http://www.java3d.org/suninstructions.html
-
+&nbsp;
 
 **Eclipse/Netbeans Installation** 
 * https://justjava3d.wordpress.com/2017/01/30/java3d-api-installation/
-
+&nbsp;
 
 ## Websites
 **Java3D 1.5.2 Documentation** 
