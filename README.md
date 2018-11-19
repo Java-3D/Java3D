@@ -17,11 +17,11 @@
 **J3D.org:** http://www.j3d.org/sites.html
 
 ## Tutorials
-**3D Graphics Programming in Java3D, Part 1 (JavaWorld):** https://www.javaworld.com/article/2076832/java-se/3d-graphics-programming-in-java--part-1--java-3d.html
+**3D Graphics Programming in Java3D, Part 1:** https://www.javaworld.com/article/2076832/java-se/3d-graphics-programming-in-java--part-1--java-3d.html
 
-**3D Graphics Programming in Java3D, Part 2 (JavaWorld):** https://www.javaworld.com/article/2076329/java-se/3d-graphics-programming-in-java--part-2--advanced-java-3d.html
+**3D Graphics Programming in Java3D, Part 2:** https://www.javaworld.com/article/2076329/java-se/3d-graphics-programming-in-java--part-2--advanced-java-3d.html
 
-**3D Graphics Programming in Java3D, Part 3 (JavaWorld):** https://www.javaworld.com/article/2076410/java-se/3d-graphics-programming-in-java--part-3--opengl.html
+**3D Graphics Programming in Java3D, Part 3:** https://www.javaworld.com/article/2076410/java-se/3d-graphics-programming-in-java--part-3--opengl.html
 
 **3D Graphics Programming in Java, Part I:** https://www.gamasutra.com/view/feature/3311/3d_graphics_programming_in_java_.php
 
