@@ -51,7 +51,7 @@
 
 
 ## Videos
-**Java3D Tutorial Part 1 by Ryan Bishop** 
+**Java3D Tutorial by Ryan Bishop** 
 * https://www.youtube.com/watch?v=yUnVPxCCRyA 
 * https://www.youtube.com/watch?v=UKve7NjU6a4
 
