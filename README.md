@@ -1,4 +1,4 @@
-# Java3D 1.5.2 API Resources
+# Java3D API Resources
 ## Downloads
 **Java3D** 
 * https://www.oracle.com/technetwork/java/javase/tech/index-jsp-138252.html
