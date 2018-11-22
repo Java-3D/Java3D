@@ -1,10 +1,10 @@
 # Java3D API Resources
 ## Downloads
-**Java3D 1.5.2** 
-* https://www.oracle.com/technetwork/java/javase/tech/index-jsp-138252.html
+**Java3D 1.5.2 (Final Stable Release by Sun Microsystems/Oracle)** 
+* https://github.com/Java-3D/Java3D/blob/master/Downloads/Java3D%201.5.2/Java3D%201.5.2.zip
 
-**Java3D 1.6.1**
-* https://github.com/hharrison/java3d-core/releases/tag/1.6.1
+**Java3D 1.6.1 (Latest Stable Release by JogAmp Community)**
+* https://github.com/Java-3D/Java3D/blob/master/Downloads/Java3D%201.6.1/Java3D%201.6.1.zip
 
 ## Installation
 **Unzipping the Java3D 1.5.2 Release** 
