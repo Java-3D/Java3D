@@ -1,21 +1,25 @@
 # Java3D API Resources
 ## Downloads
-**Java3D** 
+**Java3D 1.5.2** 
 * https://www.oracle.com/technetwork/java/javase/tech/index-jsp-138252.html
 
+**Java3D 1.6.1**
+* https://github.com/hharrison/java3d-core/releases/tag/1.6.1
 
 ## Installation
 **Unzipping the Java3D 1.5.2 Release** 
 * http://www.java3d.org/suninstructions.html
 
-**Eclipse/Netbeans Installation** 
+**Eclipse/Netbeans Installation 1.5.2** 
 * https://justjava3d.wordpress.com/2017/01/30/java3d-api-installation/
+
+**Installing Java3D 1.6.0+ Release**
+* https://gouessej.wordpress.com/2012/08/01/java-3d-est-de-retour-java-3d-is-back/
 
 
 ## Websites
 **Java3D 1.5.2 Documentation** 
 * https://download.java.net/media/java3d/javadoc/1.5.2/index.html
-
 
 **Java3D.org** 
 * http://www.java3d.org/index.html
