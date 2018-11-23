@@ -81,6 +81,10 @@
 * https://webdocs.cs.ualberta.ca/~anup/Courses/604/NOTES/J3D_overview.pdf
 
 
+**Java3D Animations**
+* http://www.macs.hw.ac.uk/~nkt/leares/Computer%20Graphics/B%20Java3D%20Animation%20Slides.pdf
+
+
 ## Demo Source Code
 **Java3D Examples 1.5.2** 
 * https://github.com/Java-3D/Java3D/tree/master/Java3D%20Demo%20Source%20Code
